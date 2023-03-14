@@ -1,0 +1,27 @@
+.div1, .div2, .div3 {
+    height: 150px;
+    width: 300px;
+    border: 10px solid yellow;
+    border-radius: 50%;
+}
+
+
+.div2 {
+    margin-top: -170px;
+    margin-left: 130px;
+    height: 150px;
+    width: 50px;
+}
+
+.div3 {
+    width: 180px;
+    height: 80px;
+    margin-top: -170px;
+    margin-left: 60px;
+}
+
+.legend {
+    margin-left: 110px;
+    margin-top: 80px;
+    font-size: 30px;
+}

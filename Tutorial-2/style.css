@@ -1,0 +1,129 @@
+/* Seletor global root para estilização por variáveis */
+    
+    :root {
+        --font-length: 15px;
+        --height-div: 10px;
+        --width-div: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        --color-div: red;
+        --color-font: #1b1919;
+    }
+/* End */
+
+/* Seletor Universal/Global para todos os elementos */
+    * {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        /* Aqui poderiam ser adicionadas outras propriedades como font-size, color, font-family etc */
+    }
+
+/* Menu bar */
+ 
+    /* 
+    *    Aplicando boas práticas de estilização, juntando vários elementos com os mesmos estilos
+    *   para evitar repetição de códigos
+    */
+    .div-principal, .lista-menu, .lista-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3e3f46;
+    }
+    
+    .div-principal {
+        height: 100vh;
+    }
+
+    .lista-menu {
+        flex-direction: column;
+        height: calc(var(--height-div) * 30);
+        width: calc(var(--width-div) * 30);
+    }
+
+    .lista-item {
+        justify-content: flex-start; /* Alinhando os elementos filhos à esquerda*/
+        color: #2793db;
+        position: relative;
+        height: calc(var(--height-div) * 4);
+        width: calc(var(--width-div) * 15);
+        transform: skewY(-15deg);
+        transition: 2s; /* 2 segundo de animação para os item girarem em -15deg */
+    }
+
+    .lista-item::after, .lista-item::before {
+        content: '';
+        position: absolute;
+        background-color: #2e3133;
+        transition: 2s;
+    }
+    
+    .lista-item::after {
+        height: calc(var(--height-div) * 4);
+        width: calc(var(--width-div) * 4);
+        left: calc(var(--width-div) * -4);
+        transform-origin: right; /* Transformando a origem de rotação à direita de 45° */
+        transform: skewY(45deg);
+    }
+
+    .lista-item::before {
+        height: calc(var(--height-div) * 4);
+        width: calc(var(--width-div) * 15);
+        top: calc(var(--height-div) * -4);
+        transform-origin: bottom; /* Transformando a origem de rotação do rodapé de 45° */
+        transform: skewX(45deg);
+    }
+
+    /* Alterando o deslocamento à esquerda de cada item da lista e alterando as cores  */
+    .lista-item:hover {
+        left: 24px;
+        cursor: pointer;
+        background-color: #199bf1;
+        transition: 1s;
+    }
+
+    /* Alterando o background dos links */
+    .lista-item:hover a {
+        color: #3e3f46;
+    }
+
+    .lista-item a {
+        margin-left: 16px;
+        color: #199bf1;
+    }
+
+    /* Alterando as cores dos pseudo-elementos */
+    .lista-item:hover::before, .lista-item:hover::after {
+        background-color: #199bf1;
+    }
+
+    /*
+    *   Seletor do tipo filho, aqui seleciona-se o primeiro filho da lista, ou seja, o primeiro item da lista.
+    * Adiciona-se à ele a 5° posição no plano 2d, para ficar mais claro, imagine uma fila, este elemento está
+    * na 5° posição de exibição
+    */
+    .lista-item:nth-child(1){
+        z-index: 5;
+    }
+
+    .lista-item:nth-child(2) {
+        z-index: 4;
+    }
+
+    .lista-item:nth-child(3) {
+        z-index: 3;
+    }
+    .lista-item:nth-child(4) {
+        z-index: 2;
+    }
+    .lista-item:nth-child(5) {
+        z-index: 1;
+    }
+
+    /* Adiciona-se a sombra a baixo do último filho da lista, pois o select last-child é o último elemento */
+    .lista-item:last-child::before {
+        box-shadow: calc(var(--height-div) * -10) calc(var(--height-div) * 10) 20px rgb(34, 23, 23);
+    }
+/* End Menu Bar */
