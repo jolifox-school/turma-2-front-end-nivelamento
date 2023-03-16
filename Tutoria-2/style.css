@@ -115,10 +115,12 @@
     .lista-item:nth-child(3) {
         z-index: 3;
     }
+
     .lista-item:nth-child(4) {
         z-index: 2;
     }
-    .lista-item:nth-child(5) {
+    
+    .lista-item:last-child(5) {
         z-index: 1;
     }
 

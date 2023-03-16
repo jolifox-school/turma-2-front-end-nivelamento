@@ -1,0 +1,17 @@
+.div-1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+@keyframes animacao-1 {
+    0% { background-color: yellow;}
+    50% { background-color: blue;}
+    75% { background-color: green;}
+    100% { background-color: red;}
+}
+
+@keyframes animacao-2 {
+    from { margin-left: 0px; }
+    to { margin-left: 100%;}
+}
