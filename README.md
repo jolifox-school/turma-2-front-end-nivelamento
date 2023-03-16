@@ -29,7 +29,7 @@ Você deverá desenvolver e ser capaz de:
 
 ### Screenshot
 
-![Designer final da página](./time-tracking-dashboard-main/design/desktop-design.jpg)
+![desktop-design](https://user-images.githubusercontent.com/88681520/225775309-b995dd33-f5de-41dd-89aa-6d505a366304.jpg)
 
 ### O que você usará
 
