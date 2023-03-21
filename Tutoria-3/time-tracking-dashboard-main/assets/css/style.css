@@ -1,0 +1,316 @@
+/* Definições padrão da raiz no projeto */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Variáveis que definem as cores do projeto */
+:root{
+    --blue: hsl(246, 80%, 60%);
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+/* Toda área da tela */
+.container{
+    width: 100vw;
+    height:100vh;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa onde será colocado o projeto */
+.menu{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    padding: 20px;
+}
+
+/* Menu da esquerda onde tem a foto do Jeremy Robson e a outra div com os links */
+.menu_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Para de cima da div, onde está mostrando a foto do Jeremy Robson */
+.menu_left1{
+    position: relative;
+    background-color: var(--blue);
+    border-radius: 15px;
+    height: 70%;
+    padding: 30px;
+}
+
+/* Imagem do Jeremy Robson */
+.image_menu_left1{
+    width: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+/* Parágrafo Report for */
+.container_menu_left1 p{
+    font-size: 0.9rem;
+    margin-top: 3.2rem;
+    color: var(--pale-blue);
+}
+
+/* Nome do Jeremy Robson */
+.container_menu_left1 h3{
+    font-size: 2.1rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* LINKS DO MENU LEFT */
+
+/* Div dos links */
+.menu_left2{
+    margin-top: -25px;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* posicionamento da UL */
+.menu_left2 .text_menu_left2 ul{
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    padding: 5px 0;
+}
+
+/* Estilos e posicionamento da LI */
+.menu_left2 .text_menu_left2 ul li{
+    list-style: none;
+    margin: 1rem;
+}
+
+
+/* Estilos e posicionamento dos links da li */
+.menu_left2 .text_menu_left2 ul li a{
+    text-decoration: none;
+    color: #fff;
+} 
+
+
+/**************** MENU RIGHT ****************/
+
+/* Div para me basear nos elementos do menu */
+.menu_right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Div para me basear nos elementos do menu da parte superior */
+
+.menu_right_up{
+    height: 50%;
+    width: 100%;
+    color: white;
+    display: flex;
+}
+
+/* Div onde ficará cada elemento do menu */
+.menu_right_up_box1{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.menu_right_up_box2{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.menu_right_up_box3{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+/* Div para me basear nos elementos do menu da parte inferior */
+
+.menu_right_down{
+    height: 50%;
+    width: 100%;
+    color: white;
+    display: flex;
+}
+
+/* Div onde ficará cada elemento do menu */
+
+.menu_right_down_box1{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.menu_right_down_box2{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.menu_right_down_box3{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/* CONTENT MENU RIGHT */
+
+/* Divs superiores onde ficam as imagens de seus respectivos significados */
+.content_up_menu_right1{
+    background-color: var(--light-red-work);
+    background-image: url('../images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+}
+
+.content_up_menu_right2{
+    background-color: var(--soft-blue);
+    background-image: url('../images/icon-play.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+}
+
+.content_up_menu_right3{
+    background-color: var(--light-red-study);
+    background-image: url('../images/icon-study.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+}
+
+/* Div inferior onde ficam os textos */
+
+.content_down_menu_right{
+    position: relative;
+    top: -5%;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    width: 100%;
+    min-height: 70%;
+    padding: 20px 30px;
+}
+
+
+
+/* TEXT menu down */
+
+/* Div header do menu */
+.content_down_menu_right .content_work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer da div do menu */
+.content_down_menu_right .last_week{
+    font-size: 0.8rem;
+}
+
+/* Body do menu, onde ficam o número */
+.content_down_menu_right h4{
+    font-size: 2.5rem;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+/* Divs inferiores onde ficam as imagens de seus respectivos significados */
+
+.content_down_menu_right1{
+    background-color: var(--lime-green);
+    background-image: url('../images/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+}
+
+.content_down_menu_right2{
+    background-color: var(--violet);
+    background-image: url('../images/icon-social.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+}
+
+.content_down_menu_right3{
+    background-color: var(--soft-orange);
+    background-image: url('../images/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+}
