@@ -60,3 +60,7 @@
 .item-lista {
     height: 32px;
 }
+
+.container-card {
+    display: flex;
+}
