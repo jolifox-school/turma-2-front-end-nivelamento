@@ -1,0 +1,33 @@
+/* Linhas dos cards */
+.rows {
+  display: flex;
+  justify-content: space-between;
+  background-color: #01011f;
+  height: 100%;
+}
+
+.superiores {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.inferiores {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+
+/* Cards */
+
+.container-card {
+  background-color: #10172e;
+  width: 100%;
+  margin: 40px 20px 0px;
+  border-radius: 20px;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+}
