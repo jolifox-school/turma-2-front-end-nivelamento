@@ -8,91 +8,89 @@
 
 body {
     background-color: #010111;
-}
-.container-main {
-    display: grid;
-    grid-template-columns: 250px 1000px;
-    height: 100vh;
-    margin: 200px;
+    margin:130px;
 }
 
-.aside-menu {
+main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100vh;
+}
+
+.menu-lateral {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 100%;
+    width: 280px;
     border-radius: 16px;
-    margin: 15px;
 }
 
-.container-profile {
+.container-perfil {
     display: grid;
     grid-template-rows: 40% 60%;
-    height: 600px;
+    height: 50%;
     z-index: 1;
-    padding: 32px 0 0  32px;
-    background-color: #6041ee;
+    padding: 32px 0 0 32px;
+    background-color: #1b4444;
     border-radius: 16px;
 }
-
 .container-avatar > img {
     width: 100px;
-    border-radius: 50%;
-    border: solid 3px;
-    border-color: #FFFFFF;
 }
 
-.container-info-profile {
+.container-info-perfil {
     display: grid;
     align-items: start;
     height: 50%;
 }
 
-.title-profile {
-    font-size: 14px;
+.titulo-perfil {
+    font-size: 16px;
 }
 
-.profile-name {
+.perfil-nome {
     font-size: 42px;
 }
 
-.container-menu {
+.container-lista {
+    background-color: #07092c;
     display: grid;
     align-items: center;
-    height: 40%;
-    background-color: #1d1d50;
+    height: 25%;
     border-radius: 16px;
-    margin-top: -20px;
-    padding: 32px 0 0  32px;
-    }
+    margin-top: -36px;
+    padding: 32px 0 0 32px;
+}
 
-.list-item {
-    height: 40px;
+.item-lista {
+    height: 36px;
 }
 
 .container-card {
     display: grid;
+    height: 100%;
 }
 
-.cards-up {
+.cards-superiores {
     display: flex;
 }
 
-.cards-down {
+.cards-inferiores {
     display: flex;
+}
+
+.container-cover {
+    height: 20%;
+    background-color: orange;
+    margin-left: 30px;
 }
 
 .card {
-    background-color: #1d1d50;
-    grid-template-rows: 40% 60%;
-    margin: 15px;
-    border-radius: 16px;
-    height: 130px;
-    width: 180px;
-    z-index: 1;
-    padding: 32px 0 0  32px;
+    margin-top: 90px;
+    height: 10vh;
+    z-index:1;
+    display: grid; 
+    background-color: rgb(46, 155, 250);
+    padding: 32px;
+    margin-top: 70px;
 }
-
-.header-card {
-    background-color: red;
-}
-
