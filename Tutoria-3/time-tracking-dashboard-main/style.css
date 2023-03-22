@@ -1,0 +1,194 @@
+:root {
+
+    --white: #FFFFFF;
+    --grey: #cfcfcf;
+
+    --blue: hsl(246, 80%, 60%);
+    --light-red: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --red: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+
+    --background: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: var(--background);
+}
+
+main {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.side-bar {
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+}
+
+.perfil-info {
+    background-color: var(--blue);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.image {
+    width: 80px;
+    background: var(--white);;
+    border-radius: 50%;
+    display: flex;
+    padding: 3px;  
+    margin-bottom: 25px;
+
+    transition: transform .3s;
+    animation: fromTop .7s .2s backwards;
+}
+
+.image:hover{
+    transform: scale(1.1);
+}
+
+.image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.title-perfil {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.title-name {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.menu-options {
+    padding: 25px;
+}
+
+.ul-options {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 15px;
+}
+
+#inactive {
+    color: var(--grey);
+    font-weight: 300;
+}
+
+.card-painel {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    
+}
+
+.container-card {
+    flex-basis: 30%;
+    padding-top: 40px;
+    border-radius: 16px;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-menu img {
+    size: 10%;
+    color: var(--white);
+}
+
+.time-title {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#work {
+    background-image: url(./images/icon-work.svg);
+    background-position: top right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-color: var(--light-red);
+    
+}
+
+#play {
+    background-image: url(./images/icon-play.svg);
+    background-position: top right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-color: var(--soft-blue);
+}
+
+#study {
+    background-image: url(./images/icon-study.svg);
+    background-position: top right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-color: var(--red);
+}
+
+#exercise {
+    background-image: url(./images/icon-exercise.svg);
+    background-position: top right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-color: var(--lime-green);
+}
+
+#social {
+    background-image: url(./images/icon-social.svg);
+    background-position: top right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+}
+
+#selfcare {
+    background-image: url(./images/icon-self-care.svg);
+    background-position: top right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-color: var(--soft-orange);
+}
