@@ -13,7 +13,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 25% 75%;
     height: 100vh;
 }
 
@@ -28,7 +28,7 @@ main {
 .container-perfil {
     display: grid;
     grid-template-rows: 40% 60%;
-    height: 50%;
+    height: 46%;
     z-index: 1;
     padding: 32px 0 0 32px;
     background-color: #1b4444;
@@ -59,16 +59,18 @@ main {
     height: 25%;
     border-radius: 16px;
     margin-top: -36px;
-    padding: 32px 0 0 32px;
+    padding: 40px 0 0 40px;
 }
 
 .item-lista {
-    height: 36px;
+    height: 50px;
+    font-size: 18px;
 }
 
 .container-card {
     display: grid;
     height: 100%;
+    margin-left: -10px;
 }
 
 .cards-superiores {
@@ -77,20 +79,24 @@ main {
 
 .cards-inferiores {
     display: flex;
+    margin-bottom: 160px;
 }
 
 .container-cover {
-    height: 20%;
+    height: 30%;
     background-color: orange;
     margin-left: 30px;
+    border-radius: 16px;
 }
 
 .card {
+    width: 230px;
     margin-top: 90px;
-    height: 10vh;
+    height: 20vh;
     z-index:1;
     display: grid; 
     background-color: rgb(46, 155, 250);
     padding: 32px;
-    margin-top: 70px;
+    margin-top: 50px;
+    border-radius: 16px;
 }
