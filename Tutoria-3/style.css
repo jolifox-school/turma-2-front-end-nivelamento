@@ -2,25 +2,25 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
+    color: #eeeeff;    ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
 body {
-    background-color: #010111;
+    background-color: #0d1323;
     margin:130px;
 }
 
 main {
     display: grid;
     grid-template-columns: 25% 75%;
-    height: 100vh;
+    height: 30vh;
 }
 
 .menu-lateral {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 85%;
     width: 280px;
     border-radius: 16px;
 }
@@ -28,12 +28,13 @@ main {
 .container-perfil {
     display: grid;
     grid-template-rows: 40% 60%;
-    height: 46%;
+    height: 40%;
     z-index: 1;
     padding: 32px 0 0 32px;
-    background-color: #1b4444;
+    background-color: #5746ea;
     border-radius: 16px;
 }
+
 .container-avatar > img {
     width: 100px;
 }
@@ -53,7 +54,7 @@ main {
 }
 
 .container-lista {
-    background-color: #07092c;
+    background-color: #1d204b;    ;
     display: grid;
     align-items: center;
     height: 25%;
@@ -69,7 +70,7 @@ main {
 
 .container-card {
     display: grid;
-    height: 100%;
+    height: 110%;
     margin-left: -10px;
 }
 
@@ -79,24 +80,123 @@ main {
 
 .cards-inferiores {
     display: flex;
-    margin-bottom: 160px;
+    margin-bottom: 430px;
 }
 
-.container-cover {
-    height: 30%;
-    background-color: orange;
+.container-cover-work {
+    position: relative;
+    height: 60%;
+    background-color: #ff8b64;
     margin-left: 30px;
-    border-radius: 16px;
+    border-radius: 16px; 
+}
+
+.container-cover-work > img{
+    width: 70px;
+    position: absolute;
+    left: 76%;
+}
+
+.container-cover-play {    
+    position: relative;
+    height: 60%;
+    background-color: #56c2e6;
+    margin-left: 30px;
+    border-radius: 16px; 
+}
+
+.container-cover-play > img{
+    width: 70px;
+    position: absolute;
+    left: 76%;
+}
+
+.container-cover-study {
+    position: relative;
+    height: 60%;
+    background-color: #ff5e7d;
+    margin-left: 30px;
+    border-radius: 16px; 
+}
+
+.container-cover-study > img{
+    width: 70px;
+    position: absolute;
+    left: 76%;
+}
+
+.container-cover-exercise {
+    position: relative;
+    height: 60%;
+    background-color: #4bcf83;
+    margin-left: 30px;
+    border-radius: 16px; 
+}
+
+.container-cover-exercise > img{
+    width: 70px;
+    position: absolute;
+    left: 76%;
+}
+
+.container-cover-social {
+    position: relative;
+    height: 60%;
+    background-color: #7235d1;
+    margin-left: 30px;
+    border-radius: 16px; 
+}
+
+.container-cover-social > img{
+    width: 70px;
+    position: absolute;
+    left: 76%;
+}
+
+.container-cover-selfcare {
+    position: relative;
+    height: 60%;
+    background-color: #f1c75b;
+    margin-left: 30px;
+    border-radius: 16px; 
+}
+
+.container-cover-selfcare > img{
+    width: 70px;
+    position: absolute;
+    left: 75%;
 }
 
 .card {
     width: 230px;
-    margin-top: 90px;
-    height: 20vh;
-    z-index:1;
+    height: 18vh;
+    z-index: 1;
     display: grid; 
-    background-color: rgb(46, 155, 250);
+    background-color: #1d204b;
     padding: 32px;
     margin-top: 50px;
     border-radius: 16px;
+    position: relative;
+}
+
+.header-card {
+    display: flex;
+    padding-left: 5px;
+}
+
+.header-card > .titulo-card {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header-card > .opcao-card {
+    padding-left: 160px;
+}
+
+.body-card {
+    font-size: 54px;
+}
+
+.rodape-card {
+    font-size: 16px;
 }
