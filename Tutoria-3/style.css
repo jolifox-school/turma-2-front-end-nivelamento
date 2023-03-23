@@ -8,26 +8,26 @@
 
 body {
     background-color: #0d1323;
-    margin:130px;
+    margin:200px 100px 110px 300px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 28% 72%;
     height: 30vh;
 }
 
 .menu-lateral {
     display: flex;
     flex-direction: column;
-    height: 85%;
+    height: 89%;
     width: 280px;
     border-radius: 16px;
 }
 
 .container-perfil {
     display: grid;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 30% 60%;
     height: 40%;
     z-index: 1;
     padding: 32px 0 0 32px;
@@ -71,7 +71,7 @@ main {
 .container-card {
     display: grid;
     height: 110%;
-    margin-left: -10px;
+    margin-left: -100px;
 }
 
 .cards-superiores {
