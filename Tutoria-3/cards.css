@@ -5,9 +5,7 @@
 /* Linhas dos cards */
 .rows {
   display: flex;
-  /* justify-content: space-between; */
   background-color: #01011f;
-  /* height: 100%; */
 }
 
 .superiores {
@@ -23,20 +21,55 @@
 }
 
 /* Cards */
-/* 22% o pedaço colorido em relação a altura de um card */
+
 .card {
   position: relative;
   background-color: #121d42;
   width: 250px;
-  height: 195px;
-  margin: 50px 15px 0px;
+  height: 200px;
+  margin: 44px 0px 0px;
   border-radius: 20px;
+}
+
+.top-card{
+  margin: 0px 15px 30px 15px;
+  border-radius: 20px 20px 60px 60px;
+}
+
+.work{
+  background: url("./time-tracking-dashboard-main/images/icon-work.svg") 
+  no-repeat top -.5rem right 1rem #FF8B64;
+}
+
+.play{
+  background: url("./time-tracking-dashboard-main/images/icon-play.svg") 
+  no-repeat top -.5rem right 1rem #56C2E6;
+}
+
+.study{
+  background: url("./time-tracking-dashboard-main/images/icon-study.svg") 
+  no-repeat top -.5rem right 1rem #FF5E7D;
+}
+
+.exercise{
+  background: url("./time-tracking-dashboard-main/images/icon-exercise.svg") 
+  no-repeat top -.5rem right 1rem #4BCF83;
+}
+
+.social{
+  background: url("./time-tracking-dashboard-main/images/icon-social.svg") 
+  no-repeat top -.5rem right 1rem #7235D1;
+}
+
+.self-care{
+  background: url("./time-tracking-dashboard-main/images/icon-self-care.svg") 
+  no-repeat top -.5rem right 1rem #F1C75B;
 }
 
 /*Partes internas dos cards*/
 
 .inner-card {
-  /* height: 100%; */
+  padding-top: 30px;
   margin: 30px;
 }
 
