@@ -161,7 +161,8 @@ body {
 }
 
 .work{
-    background-color: var(--card-bg-color-work);
+    /* background-color: var(--card-bg-color-work); */
+    background: url("./images/icon-work.svg") no-repeat top -.5rem right 1rem #FF8964;
 }
 
 .play{
