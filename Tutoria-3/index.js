@@ -110,21 +110,37 @@ function updateCards() {
     });
 
     const horaInicioElements = document.querySelectorAll(".hora-inicio");
+    let sum = 0;
 
     this.classList.add("active");
     if (this.innerHTML == "Daily") {
         horaInicioElements.forEach((horaInicioElement, index) => {
             horaInicioElement.innerHTML = valores[0].card[index].valor + "hrs";
         });
+
+        valores[0].card.forEach((e) => {
+            sum += e.valor;
+        });
+        console.log(sum);
     }
     else if (this.innerHTML == "Weekly") {
         horaInicioElements.forEach((horaInicioElement, index) => {
             horaInicioElement.innerHTML = valores[1].card[index].valor + "hrs";
         });
+
+        valores[1].card.forEach((e) => {
+            sum += e.valor;
+        });
+        console.log(sum);
     }
     else {
         horaInicioElements.forEach((horaInicioElement, index) => {
             horaInicioElement.innerHTML = valores[2].card[index].valor + "hrs";
         });
+
+        valores[2].card.forEach((e) => {
+            sum += e.valor;
+        });
+        console.log(sum);
     }
 }
