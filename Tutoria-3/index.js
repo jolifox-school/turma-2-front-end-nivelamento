@@ -100,13 +100,31 @@ const valores = [
 const menuItems = document.querySelectorAll(".menu-items li");
 
 menuItems.forEach((e) => {
-    console.log(e.innerHTML);
-    e.addEventListener("click", toggleActive, false);
+    // console.log(e.innerHTML);
+    e.addEventListener("click", updateCards, false);
 });
 
-function toggleActive() {
+function updateCards() {
     menuItems.forEach((e) => {
         e.classList.remove("active");
     });
+
+    const horaInicioElements = document.querySelectorAll(".hora-inicio");
+
     this.classList.add("active");
+    if (this.innerHTML == "Daily") {
+        horaInicioElements.forEach((horaInicioElement, index) => {
+            horaInicioElement.innerHTML = valores[0].card[index].valor + "hrs";
+        });
+    }
+    else if (this.innerHTML == "Weekly") {
+        horaInicioElements.forEach((horaInicioElement, index) => {
+            horaInicioElement.innerHTML = valores[1].card[index].valor + "hrs";
+        });
+    }
+    else {
+        horaInicioElements.forEach((horaInicioElement, index) => {
+            horaInicioElement.innerHTML = valores[2].card[index].valor + "hrs";
+        });
+    }
 }

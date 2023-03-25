@@ -142,6 +142,7 @@ body {
     height: 140px;
     display: flex;
     flex-direction: column;
+    justify-content: end;
 }
 
 .card .header{ 
@@ -162,27 +163,32 @@ body {
 
 .work{
     /* background-color: var(--card-bg-color-work); */
-    background: url("./images/icon-work.svg") no-repeat top -.5rem right 1rem #FF8964;
+    background: url("./time-tracking-dashboard-main/images/icon-work.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-work);
 }
 
 .play{
-    background-color: var(--card-bg-color-play);
+    /* background-color: var(--card-bg-color-play); */
+    background: url("./time-tracking-dashboard-main/images/icon-play.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-play);
 }
 
 .study{
-    background-color: var(--card-bg-color-study);
+    /* background-color: var(--card-bg-color-study); */
+    background: url("./time-tracking-dashboard-main/images/icon-study.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-study);
 }
 
 .exercise{
-    background-color: var(--card-bg-color-exercise);
+    /* background-color: var(--card-bg-color-exercise); */
+    background: url("./time-tracking-dashboard-main/images/icon-exercise.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-exercise);
 }
 
 .social{
-    background-color: var(--card-bg-color-social);
+    /* background-color: var(--card-bg-color-social); */
+    background: url("./time-tracking-dashboard-main/images/icon-social.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-social);
 }
 
 .care{
-    background-color: var(--card-bg-color-care);
+    /* background-color: var(--card-bg-color-care); */
+    background: url("./time-tracking-dashboard-main/images/icon-self-care.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-care);
 }
 
 .content{
@@ -197,22 +203,36 @@ body {
     cursor: pointer;
 }
 
-.header-content{
+.header-card{
     display: flex;
     justify-content: space-between;
 }
 
-.header-content span{
+.header-card span.titulo-card{
+    font-weight: 500;
+}
+
+.header-card span.opcao-card{
     color: var(--text-color-secondary);
     font-weight: 500;
 }
 
-.header-content span:hover{
+
+.header-card span:hover{
     color: var(--text-color-main);
     cursor:pointer;
 }
 
-.text-content h6{
+.text-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content span.hora-inicio{
+    font-size: 1.5rem;
+}
+
+.text-content span.resumo-atividade{
     color: var(--text-color-third);
 }
 
@@ -229,26 +249,11 @@ body {
         flex-direction:column;
     }
 
-    .card{ 
+    .card{
         width: 100%;
-        flex-direction: column;
-    }
-
-    .card{ 
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .card .text-content{
-        margin-top: var(--spacing-2);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     
 }
-
-
 
 
 
