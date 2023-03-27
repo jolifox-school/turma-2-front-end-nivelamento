@@ -1,16 +1,15 @@
-/* Definições padrão da raiz no projeto */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
+  }
+  
+  body{
     font-family: 'Rubik', sans-serif;
-}
-
-/* Variáveis que definem as cores do projeto */
-:root{
+  }
+  
+  /* Variáveis que definem as cores do projeto */
+  :root{
     --blue: hsl(246, 80%, 60%);
     --light-red-work: hsl(15, 100%, 70%);
     --soft-blue: hsl(195, 74%, 62%);
@@ -18,299 +17,326 @@ body{
     --lime-green: hsl(145, 58%, 55%);
     --violet: hsl(264, 64%, 52%);
     --soft-orange: hsl(43, 84%, 65%);
-
+  
     --very-dark-blue: hsl(226, 43%, 10%);
     --dark-blue: hsl(235, 46%, 20%);
+    --dark-blue-hover: hsl(234, 34%, 35%);
     --desaturated-blue: hsl(235, 45%, 61%);
     --pale-blue: hsl(236, 100%, 87%);
-}
-
-/* Toda área da tela */
-.container{
+  }
+  
+  .container {
     width: 100vw;
-    height:100vh;
-    background-color: var(--very-dark-blue);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Caixa onde será colocado o projeto */
-.menu{
+    background-color: var(--very-dark-blue);
+  }
+  
+  .content {
     width: 80%;
     height: 80%;
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(250px, 300px);
+    grid-template-areas:
+      "item1 item2 item3 item4"
+      "item1 item5 item6 item7";
+    gap: 25px;
     padding: 20px;
-}
-
-/* Menu da esquerda onde tem a foto do Jeremy Robson e a outra div com os links */
-.menu_left{
+  }
+  
+  .boxes {
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .box_jeremy {
+    grid-area: item1;
+    border-radius: 10px;
+    color: white;
+    margin-left: 50px;
+  }
+  
+  .dados_jeremy{
+    padding: 1rem;
+    background-color: var(--blue);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 25%;
-    padding: 0 10px;
-}
-
-/* Para de cima da div, onde está mostrando a foto do Jeremy Robson */
-.menu_left1{
     position: relative;
-    background-color: var(--blue);
+    height: 72%;
     border-radius: 15px;
-    height: 70%;
-    padding: 30px;
-}
-
-/* Imagem do Jeremy Robson */
-.image_menu_left1{
-    width: 70px;
+    z-index: 10;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .imagem_jeremy{
+    width: 5rem;
     border: 2px solid #fff;
     border-radius: 50%;
-}
-
-/* Parágrafo Report for */
-.container_menu_left1 p{
-    font-size: 0.9rem;
-    margin-top: 3.2rem;
+  }
+  
+  .dados_jeremy h1{
+    width: 50%;
+  }
+  
+  .dados_jeremy p{
+    margin-top: 3rem;
+    margin-bottom: 0.2rem;
     color: var(--pale-blue);
-}
-
-/* Nome do Jeremy Robson */
-.container_menu_left1 h3{
-    font-size: 2.1rem;
-    margin-top: 0.5rem;
-    font-weight: 300;
-    color: #fff;
-}
-
-/* LINKS DO MENU LEFT */
-
-/* Div dos links */
-.menu_left2{
+  }
+  
+  .menu_bottom{
     margin-top: -25px;
     background-color: var(--dark-blue);
     border-radius: 15px;
     display: flex;
     align-items: center;
-}
-
-/* posicionamento da UL */
-.menu_left2 .text_menu_left2 ul{
+    background-color: var(--dark-blue);
+    height: 32.8%;
+  }
+  
+  .menu_bottom .text_menu_bottom ul{
     margin-top: 1.2rem;
-    margin-left: 1rem;
+    margin-left: 1.8rem;
     padding: 5px 0;
-}
-
-/* Estilos e posicionamento da LI */
-.menu_left2 .text_menu_left2 ul li{
+  }
+  
+  .menu_bottom .text_menu_bottom ul li{
     list-style: none;
     margin: 1rem;
-}
-
-
-/* Estilos e posicionamento dos links da li */
-.menu_left2 .text_menu_left2 ul li a{
+  }
+  
+  h1, h3{
+    font-weight: 100;
+  }
+  
+  /* Estilos e posicionamento dos links da li */
+  .menu_bottom .text_menu_bottom ul li a{
     text-decoration: none;
     color: #fff;
-} 
-
-
-/**************** MENU RIGHT ****************/
-
-/* Div para me basear nos elementos do menu */
-.menu_right{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
-
-/* Div para me basear nos elementos do menu da parte superior */
-
-.menu_right_up{
-    height: 50%;
-    width: 100%;
+  } 
+  
+  .item2 {
+    grid-area: item2;
+  }
+  .item3 {
+    grid-area: item3;
+  }
+  .item4 {
+    grid-area: item4;
+  }
+  .item5 {
+    grid-area: item5;
+  }
+  .item6 {
+    grid-area: item6;
+  }
+  .item7 {
+    grid-area: item7;
+  }
+  
+  p {
     color: white;
+  }
+  
+  .header_content {
     display: flex;
-}
-
-/* Div onde ficará cada elemento do menu */
-.menu_right_up_box1{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10px;
-}
-
-.menu_right_up_box2{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10px;
-}
-
-.menu_right_up_box3{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10px;
-}
-
-
-
-
-
-
-
-/* Div para me basear nos elementos do menu da parte inferior */
-
-.menu_right_down{
-    height: 50%;
-    width: 100%;
-    color: white;
-    display: flex;
-}
-
-/* Div onde ficará cada elemento do menu */
-
-.menu_right_down_box1{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10px;
-}
-
-.menu_right_down_box2{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10px;
-}
-
-.menu_right_down_box3{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10px;
-}
-
-/* CONTENT MENU RIGHT */
-
-/* Divs superiores onde ficam as imagens de seus respectivos significados */
-.content_up_menu_right1{
-    background-color: var(--light-red-work);
-    background-image: url('../images/icon-work.svg');
-    background-repeat: no-repeat;
-    background-position:right;
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    height: 30%;
-    margin-top: 10px;
-}
-
-.content_up_menu_right2{
-    background-color: var(--soft-blue);
-    background-image: url('../images/icon-play.svg');
-    background-repeat: no-repeat;
-    background-position:right;
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    height: 30%;
-    margin-top: 10px;
-}
-
-.content_up_menu_right3{
-    background-color: var(--light-red-study);
-    background-image: url('../images/icon-study.svg');
-    background-repeat: no-repeat;
-    background-position:right;
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    height: 30%;
-    margin-top: 10px;
-}
-
-/* Div inferior onde ficam os textos */
-
-.content_down_menu_right{
-    position: relative;
-    top: -5%;
-    background-color: var(--dark-blue);
-    border-radius: 15px;
-    width: 100%;
-    min-height: 70%;
-    padding: 20px 30px;
-}
-
-
-
-/* TEXT menu down */
-
-/* Div header do menu */
-.content_down_menu_right .content_work{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-/* Footer da div do menu */
-.content_down_menu_right .last_week{
+    justify-content: space-between;
+  }
+  
+  .header_content h2 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .teste1 {
+    width: 100%;
+    height: 23%;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--light-red-work);
+    background-image: url("./assets/images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  
+  .teste2 {
+      width: 100%;
+      height: 23%;
+      border-radius: 15px 15px 0 0;
+      background-color: var(--soft-blue);
+      background-image: url("./assets/images/icon-play.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+  }
+  
+  .teste3 {
+      width: 100%;
+      height: 23%;
+      border-radius: 15px 15px 0 0;
+      background-color: var(--light-red-study);
+      background-image: url("./assets/images/icon-study.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  
+    .teste4 {
+      width: 100%;
+      height: 23%;
+      border-radius: 15px 15px 0 0;
+      background-color: var(--lime-green);
+      background-image: url("./assets/images/icon-exercise.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  
+    .teste5 {
+      width: 100%;
+      height: 23%;
+      border-radius: 15px 15px 0 0;
+      background-color: var(--violet);
+      background-image: url("./assets/images/icon-social.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  
+    .teste6 {
+      width: 100%;
+      height: 23%;
+      border-radius: 15px 15px 0 0;
+      background-color: var(--soft-orange);
+      background-image: url("./assets/images/icon-self-care.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  
+  
+  .teste_bottom {
+    padding: 1rem;
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 82%;
+    border-radius: 15px;
+    top: -0.8rem;
+    padding: 1.6rem;
+  }
+  
+  .teste_bottom:active{
+    background-color: var(--dark-blue-hover);
+    cursor: pointer;
+  }
+  
+  .teste_bottom h3 {
+    font-size: 2.8rem;
+    margin: 2.5rem 0 1.5rem 0;
+  }
+  
+  .teste_bottom p {
     font-size: 0.8rem;
-}
-
-/* Body do menu, onde ficam o número */
-.content_down_menu_right h4{
-    font-size: 2.5rem;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    font-weight: 100;
-}
-
-/* Divs inferiores onde ficam as imagens de seus respectivos significados */
-
-.content_down_menu_right1{
-    background-color: var(--lime-green);
-    background-image: url('../images/icon-exercise.svg');
-    background-repeat: no-repeat;
-    background-position:right;
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    height: 30%;
-    margin-top: 10px;
-}
-
-.content_down_menu_right2{
-    background-color: var(--violet);
-    background-image: url('../images/icon-social.svg');
-    background-repeat: no-repeat;
-    background-position:right;
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    height: 30%;
-    margin-top: 10px;
-}
-
-.content_down_menu_right3{
-    background-color: var(--soft-orange);
-    background-image: url('../images/icon-self-care.svg');
-    background-repeat: no-repeat;
-    background-position:right;
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    height: 30%;
-    margin-top: 10px;
-}
+    color: var(--pale-blue);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      height: auto;
+      max-width: 100vw;
+    }
+  
+    .content {
+      width: 90%;
+      height: auto;
+      justify-content: center;
+      grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7";
+    }
+  
+    .boxes{
+      margin-bottom: 2.5rem;
+    }
+  
+    .teste_bottom{
+      height: 100%;
+    }
+  
+    .box_jeremy{
+      margin-left: 0px;
+      margin-bottom: 1.5rem;
+    }
+  
+    .dados_jeremy{
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .menu_bottom{
+      height: 55%;
+      width: 100%;
+    }
+  
+    .menu_bottom .text_menu_bottom ul li{
+      flex-direction: row;
+      display: inline;
+    }
+    
+    .imagem_jeremy{
+      width: 4.5rem;
+      margin-right: 1rem;
+    }
+  
+    .nome_jeremy{
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .nome_jeremy h1{
+      width: 100%;
+      font-size: 1.3rem;
+    }
+  
+    .dados_jeremy p{
+      margin-top: 0%;
+    }
+  
+    .dados_jeremy{
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding: 2rem;
+    }
+  
+    /* ************** */
+  
+    .dados_content{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.8rem;
+    }
+  
+    .teste_bottom h3 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+  
+    .teste1, .teste2, .teste3, .teste4, .teste5, .teste6 {
+      width: 100%;
+      height: 35%;
+    }
+  
+  }
+  
+  
