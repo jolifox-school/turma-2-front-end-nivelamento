@@ -152,68 +152,68 @@
     font-weight: 500;
   }
   
-  .teste1 {
+  .box1 {
     width: 100%;
     height: 23%;
     border-radius: 15px 15px 0 0;
     background-color: var(--light-red-work);
-    background-image: url("./assets/images/icon-work.svg");
+    background-image: url("../images/icon-work.svg");
     background-repeat: no-repeat;
     background-position: right;
   }
   
-  .teste2 {
+  .box2 {
       width: 100%;
       height: 23%;
       border-radius: 15px 15px 0 0;
       background-color: var(--soft-blue);
-      background-image: url("./assets/images/icon-play.svg");
+      background-image: url("../images/icon-play.svg");
       background-repeat: no-repeat;
       background-position: right;
   }
   
-  .teste3 {
+  .box3 {
       width: 100%;
       height: 23%;
       border-radius: 15px 15px 0 0;
       background-color: var(--light-red-study);
-      background-image: url("./assets/images/icon-study.svg");
+      background-image: url("../images/icon-study.svg");
       background-repeat: no-repeat;
       background-position: right;
     }
   
-    .teste4 {
+    .box4 {
       width: 100%;
       height: 23%;
       border-radius: 15px 15px 0 0;
       background-color: var(--lime-green);
-      background-image: url("./assets/images/icon-exercise.svg");
+      background-image: url("../images/icon-exercise.svg");
       background-repeat: no-repeat;
       background-position: right;
     }
   
-    .teste5 {
+    .box5 {
       width: 100%;
       height: 23%;
       border-radius: 15px 15px 0 0;
       background-color: var(--violet);
-      background-image: url("./assets/images/icon-social.svg");
+      background-image: url("../images/icon-social.svg");
       background-repeat: no-repeat;
       background-position: right;
     }
   
-    .teste6 {
+    .box6 {
       width: 100%;
       height: 23%;
       border-radius: 15px 15px 0 0;
       background-color: var(--soft-orange);
-      background-image: url("./assets/images/icon-self-care.svg");
+      background-image: url("../images/icon-self-care.svg");
       background-repeat: no-repeat;
       background-position: right;
     }
   
   
-  .teste_bottom {
+  .box_dados {
     padding: 1rem;
     background-color: var(--dark-blue);
     display: flex;
@@ -226,17 +226,17 @@
     padding: 1.6rem;
   }
   
-  .teste_bottom:active{
+  .box_dados:active{
     background-color: var(--dark-blue-hover);
     cursor: pointer;
   }
   
-  .teste_bottom h3 {
+  .box_dados h3 {
     font-size: 2.8rem;
     margin: 2.5rem 0 1.5rem 0;
   }
   
-  .teste_bottom p {
+  .box_dados p {
     font-size: 0.8rem;
     color: var(--pale-blue);
   }
@@ -265,7 +265,7 @@
       margin-bottom: 2.5rem;
     }
   
-    .teste_bottom{
+    .box_dados{
       height: 100%;
     }
   
@@ -327,12 +327,12 @@
       margin-top: 0.8rem;
     }
   
-    .teste_bottom h3 {
+    .box_dados h3 {
       font-size: 2.8rem;
       margin: 0;
     }
   
-    .teste1, .teste2, .teste3, .teste4, .teste5, .teste6 {
+    .box1, .box2, .box3, .box4, .box5, .box6 {
       width: 100%;
       height: 35%;
     }

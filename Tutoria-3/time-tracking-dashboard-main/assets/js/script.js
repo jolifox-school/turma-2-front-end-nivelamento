@@ -13,19 +13,19 @@ let conteudos_cards = [
 
 conteudos_cards.forEach((conteudo, index)=>{
     content.innerHTML += `
-    <div class="boxes">
-        <div class="teste${index + 1}"></div>
-        <div class="teste_bottom">
-            <div class="header_content">
+    <section class="boxes">
+        <section class="box${index + 1}"></section>
+        <section class="box_dados">
+            <section class="header_content">
                 <h2>${conteudo.titulo}</h2>
                 <a href="#"><img src="./assets/images/icon-ellipsis.svg" alt=""></a>
-            </div>
-            <div class="dados_content">
+            </section>
+            <section class="dados_content">
                 <h3>${conteudo.subtitulo}</h3>
                 <p>${conteudo.paragrafo}</p>
-            </div>
-        </div>
-    <div>
+            </section>
+        </section>
+    <section>
     `
 })
 
