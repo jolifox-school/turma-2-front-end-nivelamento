@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+    .whrapper-page {
+        grid-template-columns: 150px 550px;
+        gap: 1rem; /* 1rem =  16px */
+    }
+
+    .container-card {
+        width: 170px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hora-inicio {
+        font-size: 32px;
+    }
+
+    .resumo-atividade {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .container-main {
+        height: auto;
+    }
+
+    .whrapper-page {
+        grid-template-columns: auto;
+        width: 420px;
+        height: 100%;
+        gap: 2rem;
+    }
+
+    .cards-superiores, .cards-inferiores {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .cards-inferiores .container-card {
+        top: 0;
+    }
+
+    .cards-superiores {
+        margin-bottom: 1.5rem;
+    }
+
+    .cards-inferiores {
+        margin-top: 2rem;
+    }
+
+
+    .container-card {
+        width: 100%;
+    }
+
+        /* .cards-inferiores .container-card:last-child {
+            margin-bottom: 3rem;
+        } */
+}
+
+@media (max-width: 480px) {
+    .whrapper-page {
+        width: 320px;
+    }
+
+    
+}
