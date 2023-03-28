@@ -5,7 +5,7 @@
 /* Linhas dos cards */
 .rows {
   display: flex;
-  background-color: #01011f;
+  background-color: var(--very-dark-blue);
 }
 
 .superiores {
@@ -24,46 +24,48 @@
 
 .card {
   position: relative;
-  background-color: #121d42;
+  background-color: var(--dark-blue);
   width: 250px;
   height: 200px;
   margin: 44px 0px 0px;
   border-radius: 20px;
+  transition: 0.2s ease-in-out;
 }
 
-.top-card{
+.card:hover {
+  background-color: var(--card-hover);
+  cursor: pointer;
+}
+
+.top-card {
   margin: 0px 15px 30px 15px;
   border-radius: 20px 20px 60px 60px;
 }
 
-.work{
-  background: url("./time-tracking-dashboard-main/images/icon-work.svg") 
-  no-repeat top -.5rem right 1rem #FF8B64;
+.work {
+  background: url("./images/icon-work.svg") no-repeat top -0.5rem right 1rem var(--work-light-red);
 }
 
-.play{
-  background: url("./time-tracking-dashboard-main/images/icon-play.svg") 
-  no-repeat top -.5rem right 1rem #56C2E6;
+.play {
+  background: url("./images/icon-play.svg") no-repeat top -0.5rem right 1rem var(--play-soft-blue);
 }
 
-.study{
-  background: url("./time-tracking-dashboard-main/images/icon-study.svg") 
-  no-repeat top -.5rem right 1rem #FF5E7D;
+.study {
+  background: url("./images/icon-study.svg") no-repeat top -0.5rem right 1rem var(--study-light-red);
 }
 
-.exercise{
-  background: url("./time-tracking-dashboard-main/images/icon-exercise.svg") 
-  no-repeat top -.5rem right 1rem #4BCF83;
+.exercise {
+  background: url("./images/icon-exercise.svg") no-repeat top -0.5rem right 1rem
+    var(--exercise-lime-green);
 }
 
-.social{
-  background: url("./time-tracking-dashboard-main/images/icon-social.svg") 
-  no-repeat top -.5rem right 1rem #7235D1;
+.social {
+  background: url("./images/icon-social.svg") no-repeat top -0.5rem right 1rem var(--social-violet);
 }
 
-.self-care{
-  background: url("./time-tracking-dashboard-main/images/icon-self-care.svg") 
-  no-repeat top -.5rem right 1rem #F1C75B;
+.self-care {
+  background: url("./images/icon-self-care.svg") no-repeat top -0.5rem right 1rem
+    var(--self-care-soft-orange);
 }
 
 /*Partes internas dos cards*/
@@ -76,7 +78,7 @@
 .header-card {
   display: flex;
   justify-content: space-between;
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -106,6 +108,6 @@
 
 .resumo-atividade {
   font-size: 15px;
-  color: #b5b5b5;
+  color: var(--pale-blue);
   font-weight: bold;
 }
