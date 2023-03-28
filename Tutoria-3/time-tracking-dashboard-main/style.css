@@ -35,6 +35,7 @@ main {
     grid-template-columns: 25% 75%;
     justify-content: space-around;
     gap: 25px;
+
 }
 
 .side-bar {
@@ -191,4 +192,83 @@ main {
     background-size: 25%;
     background-repeat: no-repeat;
     background-color: var(--soft-orange);
+}
+
+@media only screen and (max-width: 780px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+        padding-top: 100px;
+    }
+
+    .perfil-info {
+        display: grid;
+        grid-template-columns: 20% 65%;
+        justify-content: space-between;
+        padding-left: 15px;
+        align-items: center;
+    }    
+
+    .title-perfil {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .subtitle {
+        width: 100%;
+    }
+
+    .title-name {
+        font-size: 24px;
+        margin-right: 7px;
+        
+    }
+
+    .ul-options {
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    
+    .card-painel {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-card {
+        flex-basis: 100%;
+        width: 100%;
+    }    
+
+    .card {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-title {
+        font-size: 16px;
+         
+    }
+
+    .time-title {
+        font-size: 36px;
+    }    
+
+    .card-header {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .card-body {
+        width: 50%;  
+    }
+    .card-footer {
+        width: 50%; 
+        text-align: right;
+    }
 }
