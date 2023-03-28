@@ -97,7 +97,6 @@ const valores = [
 
 const list = ["Daily", "Weekly", "Monthly"];
 
-
 const createList = () => {
     list.forEach(item => {
         const ul = document.querySelector(".ul-lista");
@@ -142,5 +141,18 @@ const createCard = (arrayCard, elementoPai) => {
 
 createCard(cardsSuperiores, superior);
 createCard(cardInferiores, inferior);
+
+const funcaoClick = () => {
+    const lista = document.querySelectorAll(".item-lista");
+    lista.forEach(itemAlvo => {
+        itemAlvo.addEventListener("click", ()=> {
+            console.log("elemento clicado", itemAlvo.textContent)
+        });
+    });
+}
+funcaoClick();
+
+
+
 
 
