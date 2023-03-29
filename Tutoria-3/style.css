@@ -102,88 +102,52 @@ body {
 .container-cover-work {
     position: relative;
     height: 60%;
-    background-color: #ff8b64;
     margin-left: 30px;
     border-radius: 16px; 
-}
-
-.container-cover-work > img{
-    width: 70px;
-    position: absolute;
-    left: 70%;
+    background: url("./images/icon-work.svg") no-repeat top -.1rem right -.1rem #ff8b64;;
 }
 
 .container-cover-play {    
     position: relative;
     height: 60%;
-    background-color: #56c2e6;
     margin-left: 30px;
     border-radius: 16px; 
-}
-
-.container-cover-play > img{
-    width: 70px;
-    position: absolute;
-    left: 70%;
+    background: url("./images/icon-play.svg") no-repeat top -.1rem right -.1rem #56C2E4;
 }
 
 .container-cover-study {
     position: relative;
     height: 60%;
-    background-color: #ff5e7d;
     margin-left: 30px;
     border-radius: 16px; 
-}
-
-.container-cover-study > img{
-    width: 70px;
-    position: absolute;
-    left: 69%;
+    background: url("./images/icon-study.svg") no-repeat top -.1rem right -.1rem #ff5e7d;
 }
 
 .container-cover-exercise {
     position: relative;
     height: 60%;
     top: -2.5rem;
-    background-color: #4bcf83;
     margin-left: 30px;
     border-radius: 16px; 
-}
-
-.container-cover-exercise > img{
-    width: 70px;
-    position: absolute;
-    left: 69%;
+    background: url("./images/icon-exercise.svg") no-repeat top -.1rem right -.1rem #4bcf83;
 }
 
 .container-cover-social {
     position: relative;
     top: -2.5rem;
     height: 60%;
-    background-color: #7235d1;
     margin-left: 30px;
     border-radius: 16px; 
-}
-
-.container-cover-social > img{
-    width: 70px;
-    position: absolute;
-    left: 70%;
+    background: url("./images/icon-social.svg") no-repeat top -.1rem right -.1rem #7235d1;
 }
 
 .container-cover-selfcare {
     position: relative;
     top: -2.5rem;
     height: 60%;
-    background-color: #f1c75b;
     margin-left: 30px;
     border-radius: 16px; 
-}
-
-.container-cover-selfcare > img{
-    width: 70px;
-    position: absolute;
-    left: 70%;
+    background: url("./images/icon-self-care.svg") no-repeat top -.1rem right -.1rem #f1c75b;
 }
 
 .card {
@@ -220,10 +184,6 @@ body {
     padding-left: 100px;
 }
 
-.body-card {
-    font-size: 54px;
-}
-
-.rodape-card {
-    font-size: 16px;
+.header-card {
+    max-width: 80px;
 }

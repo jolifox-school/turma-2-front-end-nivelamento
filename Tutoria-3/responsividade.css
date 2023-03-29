@@ -1,5 +1,149 @@
-@media (max-width: 1024px) {
+@media (max-width: 1285px) {
     .whrapper-page {
-        background-color: ;
+        grid-template-columns: 160px 300px;
+        gap: 1rem;
     }
+
+    .container-card {
+        width: 170px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hora-inicio {
+        font-size: 32px;
+    }
+
+    .resumo-atividade {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .whrapper-page {
+        flex-direction: column;
+        width: 400px;
+        height: 10%;
+    }
+
+    .menu-lateral {
+        height: 30%;
+        width: 400px;
+        border-radius: 16px;
+        font-size: 12px;
+    }
+
+    .container-lista {
+        height: 20%;
+    }
+
+    .item-lista {
+        display: inline-block;
+        height: 40px;
+        font-size: 16px;
+        margin: 0 0 0 45px; 
+    }
+
+    .titulo-perfil {
+        font-size: 12px;
+        padding-left: 120px;
+        padding-top: -50px;
+    }
+
+    .perfil-nome {
+        font-size: 30px;
+        padding-left: 110px;
+        padding-top: -30px;
+    }
+
+    .container-cover-work {
+        width: 400px;
+    }
+
+    .container-cover-play {
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .container-cover-study {
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .container-cover-exercise {
+        width: 400px;
+    }
+
+    .container-cover-social {
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .container-cover-selfcare {
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .cards-superiores, .cards-inferiores {
+        flex-direction: column;
+    }
+
+    .cards-superiores {
+        margin-top: 20rem;
+        margin-left: -18.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .cards-inferiores {
+        margin-top: 3rem;
+        margin-left: -18.5rem;
+    }
+
+    .card {
+        display: flex;
+    }
+    
+    .container-card {
+        width: 40%;
+    }
+    
+    .header-card > .titulo-card {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .header-card > .opcao-card img{
+        padding-left: 250px;
+    }
+
+    .header-card > .opcao-card2 img{
+        padding-left: 230px;
+    }
+    
+    .header-card > .opcao-card3 img{
+        padding-left: 250px;
+    }
+
+    .resumo-atividade {
+        font-size: 16px;
+        min-width: 50px;
+        min-height: 50px;
+        position: relative;
+        top: 40px; left: 30px;
+    }
+
+    .card-div {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whrapper-page {
+        width: 320px;
+    }
+
+    
 }
