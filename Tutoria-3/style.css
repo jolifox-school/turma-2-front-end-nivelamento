@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -8,13 +9,13 @@
 
 body {
     background-color: #0d1323;
-    margin:200px 100px 110px 300px;
+    margin:200px
 }
 
-main {
+.whrapper-page {
     display: grid;
-    grid-template-columns: 28% 72%;
-    height: 30vh;
+    grid-template-columns: 200px 800px;
+    height: 100vh;
 }
 
 .menu-lateral {
@@ -42,7 +43,7 @@ main {
 .container-info-perfil {
     display: grid;
     align-items: start;
-    height: 50%;
+    height: 70%;
 }
 
 .titulo-perfil {
@@ -56,32 +57,47 @@ main {
 .container-lista {
     background-color: #1d204b;    ;
     display: grid;
-    align-items: center;
-    height: 25%;
+    align-items: end;
+    height: 23%;
     border-radius: 16px;
-    margin-top: -36px;
-    padding: 40px 0 0 40px;
+    margin-top: -1rem;
+    padding-left: 2rem;
 }
 
 .item-lista {
-    height: 50px;
+    height: 40px;
     font-size: 18px;
 }
 
 .container-card {
     display: grid;
-    height: 110%;
-    margin-left: -100px;
+    align-content: space-between;
+    height: 10%;
+    margin-left: 6rem;
 }
 
 .cards-superiores {
     display: flex;
+    align-items: start;
+    z-index: 0;
+    position: relative;
 }
 
 .cards-inferiores {
     display: flex;
-    margin-bottom: 430px;
+    align-items: end;
+    z-index: 0;
+    position: relative;
 }
+
+.cards-superiores .card {
+    top: 1rem;
+}
+
+.cards-inferiores .card {
+    top: 1rem;
+}
+
 
 .container-cover-work {
     position: relative;
@@ -94,7 +110,7 @@ main {
 .container-cover-work > img{
     width: 70px;
     position: absolute;
-    left: 76%;
+    left: 70%;
 }
 
 .container-cover-play {    
@@ -108,7 +124,7 @@ main {
 .container-cover-play > img{
     width: 70px;
     position: absolute;
-    left: 76%;
+    left: 70%;
 }
 
 .container-cover-study {
@@ -122,12 +138,13 @@ main {
 .container-cover-study > img{
     width: 70px;
     position: absolute;
-    left: 76%;
+    left: 69%;
 }
 
 .container-cover-exercise {
     position: relative;
     height: 60%;
+    top: -2.5rem;
     background-color: #4bcf83;
     margin-left: 30px;
     border-radius: 16px; 
@@ -136,11 +153,12 @@ main {
 .container-cover-exercise > img{
     width: 70px;
     position: absolute;
-    left: 76%;
+    left: 69%;
 }
 
 .container-cover-social {
     position: relative;
+    top: -2.5rem;
     height: 60%;
     background-color: #7235d1;
     margin-left: 30px;
@@ -150,11 +168,12 @@ main {
 .container-cover-social > img{
     width: 70px;
     position: absolute;
-    left: 76%;
+    left: 70%;
 }
 
 .container-cover-selfcare {
     position: relative;
+    top: -2.5rem;
     height: 60%;
     background-color: #f1c75b;
     margin-left: 30px;
@@ -164,7 +183,7 @@ main {
 .container-cover-selfcare > img{
     width: 70px;
     position: absolute;
-    left: 75%;
+    left: 70%;
 }
 
 .card {
@@ -189,8 +208,16 @@ main {
     font-size: 16px;
 }
 
-.header-card > .opcao-card {
-    padding-left: 160px;
+.header-card > .opcao-card img{
+    padding-left: 115px;
+}
+
+.header-card > .opcao-card2 img{
+    padding-left: 90px;
+}
+
+.header-card > .opcao-card3 img{
+    padding-left: 100px;
 }
 
 .body-card {

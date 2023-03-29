@@ -6,7 +6,7 @@ const valores = [
             "study": 12,
             "exercise": 8,
             "social": 15,
-            "selfcare": 6,
+            "selfcare": 6
         }
     },
     {
@@ -16,7 +16,7 @@ const valores = [
             "study": 24,
             "exercise": 20,
             "social": 15,
-            "selfcare": 12,
+            "selfcare": 12
         }
     },
     {
@@ -26,9 +26,11 @@ const valores = [
             "study": 36,
             "exercise": 32,
             "social": 30,
-            "selfcare": 30,
+            "selfcare": 30
         }
     }
 ]
 
-valores.forEach((item) => console.log(item))
+valores.forEach((item, index) => {
+    console.log(valores[index])
+})
