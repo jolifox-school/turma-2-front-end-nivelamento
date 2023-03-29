@@ -1,0 +1,134 @@
+@media (max-width: 1280px) {
+  .container-main {
+    grid-template-columns: 150px 550px;
+    width: 700px;
+  }
+
+  .card {
+    width: 163px;
+    margin: 45px 0px 0px;
+  }
+
+  .top-card {
+    margin: 0px 10px 30px 10px;
+    border-radius: 20px 20px 60px 60px;
+  }
+
+  .menu-lateral {
+    margin-right: 10px;
+  }
+
+  /*Jeremy Robson*/
+  .perfil-nome {
+    font-size: 25px;
+  }
+
+  .titulo-card {
+    font-size: 15px;
+  }
+
+  .body-card {
+    font-size: 40px;
+  }
+
+  .resumo-atividade {
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 750px) {
+  .container-main {
+    grid-template-columns: auto;
+    width: 420px;
+    height: auto;
+    gap: 2 rem;
+  }
+
+  .container-perfil {
+    grid-template-columns: 30% 70%;
+    height: 110px;
+    padding: 30px 0 0px 30px;
+  }
+
+  .container-info-perfil {
+    display: grid;
+    align-items: center;
+    height: 110px;
+    margin-top: -10px;
+  }
+
+  .titulo-perfil {
+    font-size: 20px;
+  }
+
+  .perfil-nome {
+    font-size: 30px;
+  }
+
+  .menu-lateral {
+    margin-bottom: 30px;
+  }
+
+  .container-lista {
+    padding: 0;
+    height: 110px;
+  }
+
+  .ul-lista {
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+
+  .item-lista {
+    justify-content: center;
+    width: 100%;
+    font-size: 23px;
+  }
+
+  /* Cards */
+
+  .rows {
+    flex-direction: column;
+    /* gap: 2rem; */
+  }
+
+  .inferiores .superiores {
+    top: 0;
+  }
+
+  .container-card {
+    width: 100%;
+    top: 0;
+  }
+
+  .card {
+    width: 100%;
+    height: 120px;
+  }
+
+  .inner-card {
+    padding-top: 20px;
+  }
+
+  .body-card {
+    margin-top: 8px;
+  }
+
+  .titulo-card {
+    font-size: 20px;
+  }
+
+  .rodape-card {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    bottom: 40px;
+  }
+
+  .resumo-atividade {
+    font-size: 19px;
+  }
+}

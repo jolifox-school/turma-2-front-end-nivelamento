@@ -108,6 +108,7 @@ body {
   display: grid;
   align-items: center;
   margin-top: -20px;
+  margin-right: 150px;
 }
 
 .item-lista {
@@ -115,7 +116,6 @@ body {
   align-items: center;
   height: 40px;
   font-size: 1.1rem;
-
   color: var(--desaturated-blue);
   font-weight: bold;
   transition: 0.5s;
@@ -124,11 +124,10 @@ body {
 .item-lista:hover {
   color: #ffffff;
   cursor: pointer;
-  padding-left: 10px;
 }
 
 /* Selected period */
 .selected {
   color: #ffffff;
-  padding-left: 10px;
+  scale: 1.12;
 }

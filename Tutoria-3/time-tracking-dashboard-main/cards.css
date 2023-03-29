@@ -1,5 +1,5 @@
 .container-card {
-  width: 840px;
+  width: 100%;
 }
 
 /* Linhas dos cards */
@@ -27,9 +27,9 @@
   background-color: var(--dark-blue);
   width: 250px;
   height: 200px;
-  margin: 44px 0px 0px;
+  margin: 45px 0px 0px;
   border-radius: 20px;
-  transition: 0.2s ease-in-out;
+  transition: 0.18s ease-in-out;
 }
 
 .card:hover {
