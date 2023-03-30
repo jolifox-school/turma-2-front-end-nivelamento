@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <section id="main-card">
+        <aside id="main-card">
             <figure class="profile-container">
                 <img src="./assets/images/image-jeremy.png" alt="Jeremy Robson">
                 <figcaption>
@@ -20,151 +20,21 @@
             </figure>
             <div id="check-container">
                 <fieldset>
-                    <input id="checkDaily" type="radio" name="toggle" checked>
+                    <input data-name="Daily" id="checkDaily" type="radio" name="toggle" checked>
                     <label for="checkDaily">Daily</label>
                 </fieldset>
                 <fieldset>
-                    <input id="checkWeekly" type="radio" name="toggle">
+                    <input data-name="Weekly" id="checkWeekly" type="radio" name="toggle">
                     <label for="checkWeekly">Weekly</label>
                 </fieldset>
                 <fieldset>
-                    <input id="checkMonthly" type="radio" name="toggle">
+                    <input data-name="Monthly" id="checkMonthly" type="radio" name="toggle">
                     <label for="checkMonthly">Monthly</label>
                 </fieldset>
             </div>
-        </section>
-        <ul id="daily" class="cards-container">
-            <li id="work" class="card">
-                <div class="card-content">
-                    <h2>Work</h2>
-                    <h3>8hrs</h3>
-                    <span>Last day - 8hrs</span>
-                </div>
-            </li>
-            <li id="play" class="card">
-                <div class="card-content">
-                    <h2>Play</h2>
-                    <h3>2hrs</h3>
-                    <span>Last day - 1hrs</span>
-                </div>
-            </li>
-            <li id="study" class="card">
-                <div class="card-content">
-                    <h2>Study</h2>
-                    <h3>4hrs</h3>
-                    <span>Last day - 6hrs</span>
-                </div>
-            </li>
-            <li id="exercise" class="card">
-                <div class="card-content">
-                    <h2>Exercise</h2>
-                    <h3>2hrs</h3>
-                    <span>Last day - 0hrs</span>
-                </div>
-            </li>
-            <li id="social" class="card">
-                <div class="card-content">
-                    <h2>Social</h2>
-                    <h3>1hrs</h3>
-                    <span>Last day - 0hrs</span>
-                </div>
-            </li>
-            <li id="selfCare" class="card">
-                <div class="card-content">
-                    <h2>Self Care</h2>
-                    <h3>1hrs</h3>
-                    <span>Last day - 2hrs</span>
-                </div>
-            </li>
-        </ul>
-        <ul id="weekly" class="cards-container">
-            <li id="work" class="card">
-                <div class="card-content">
-                    <h2>Work</h2>
-                    <h3>32hrs</h3>
-                    <span>Last week - 36hrs</span>
-                </div>
-            </li>
-            <li id="play" class="card">
-                <div class="card-content">
-                    <h2>Play</h2>
-                    <h3>10hrs</h3>
-                    <span>Last week - 8hrs</span>
-                </div>
-            </li>
-            <li id="study" class="card">
-                <div class="card-content">
-                    <h2>Study</h2>
-                    <h3>4hrs</h3>
-                    <span>Last week - 7hrs</span>
-                </div>
-            </li>
-            <li id="exercise" class="card">
-                <div class="card-content">
-                    <h2>Exercise</h2>
-                    <h3>4hrs</h3>
-                    <span>Last week - 5hrs</span>
-                </div>
-            </li>
-            <li id="social" class="card">
-                <div class="card-content">
-                    <h2>Social</h2>
-                    <h3>5hrs</h3>
-                    <span>Last week - 10hrs</span>
-                </div>
-            </li>
-            <li id="selfCare" class="card">
-                <div class="card-content">
-                    <h2>Self Care</h2>
-                    <h3>2hrs</h3>
-                    <span>Last week - 2hrs</span>
-                </div>
-            </li>
-        </ul>
-        <ul id="monthly" class="cards-container">
-            <li id="work" class="card">
-                <div class="card-content">
-                    <h2>Work</h2>
-                    <h3>960hrs</h3>
-                    <span>Last month - 920hrs</span>
-                </div>
-            </li>
-            <li id="play" class="card">
-                <div class="card-content">
-                    <h2>Play</h2>
-                    <h3>300hrs</h3>
-                    <span>Last month - 290hrs</span>
-                </div>
-            </li>
-            <li id="study" class="card">
-                <div class="card-content">
-                    <h2>Study</h2>
-                    <h3>120hrs</h3>
-                    <span>Last month - 100hrs</span>
-                </div>
-            </li>
-            <li id="exercise" class="card">
-                <div class="card-content">
-                    <h2>Exercise</h2>
-                    <h3>120hrs</h3>
-                    <span>Last month - 90hrs</span>
-                </div>
-            </li>
-            <li id="social" class="card">
-                <div class="card-content">
-                    <h2>Social</h2>
-                    <h3>150hrs</h3>
-                    <span>Last month - 100hrs</span>
-                </div>
-            </li>
-            <li id="selfCare" class="card">
-                <div class="card-content">
-                    <h2>Self Care</h2>
-                    <h3>60hrs</h3>
-                    <span>Last month - 50hrs</span>
-                </div>
-            </li>
-        </ul>
+        </aside>
+        <section class="cards-container"></section>
     </main>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>

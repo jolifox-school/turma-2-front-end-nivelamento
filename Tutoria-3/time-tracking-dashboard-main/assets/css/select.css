@@ -14,7 +14,7 @@ input:checked ~ label{
     color: #f9f9f9;
 }
 
-main:has(#checkDaily:checked) #daily{
+/* main:has(#checkDaily:checked) #daily{
     display: flex;
 }
 main:has(#checkDaily:not(:checked)) #daily{
@@ -31,7 +31,7 @@ main:has(#checkMonthly:checked) #monthly{
 }
 main:has(#checkMonthly:not(:checked)) #monthly{
     display: none;
-}
+} */
 
 @media screen and (max-width: 1100px){
     #check-container{

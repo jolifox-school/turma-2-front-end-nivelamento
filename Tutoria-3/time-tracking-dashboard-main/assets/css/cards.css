@@ -25,6 +25,7 @@
     margin-top: .5rem;
 }
 .cards-container{
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: calc((201px * 3) + 2rem);
@@ -59,6 +60,8 @@
 
 .card-content{
     background-color: var(--primary-dark);
+    outline: 2px solid var(--primary-dark);
+    border: 2px solid var(--primary-dark);
     background-image: url("../images/icon-ellipsis.svg");
     background-repeat: no-repeat;
     background-position: 90% 22%;
