@@ -21,7 +21,7 @@ body {
 .menu-lateral {
     display: flex;
     flex-direction: column;
-    height: 89%;
+    height: 90%;
     width: 280px;
     border-radius: 16px;
 }
@@ -37,17 +37,20 @@ body {
 }
 
 .container-avatar > img {
-    width: 100px;
+    width: 100px;    
+    border-radius: 50%;
+    border: 3px solid white;
 }
 
 .container-info-perfil {
     display: grid;
     align-items: start;
-    height: 70%;
+    height: 50%;
 }
 
 .titulo-perfil {
     font-size: 16px;
+    margin-top: 27px;
 }
 
 .perfil-nome {
@@ -169,7 +172,13 @@ body {
 
 .header-card > .titulo-card {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+    position: relative;
+    top: -10px; left: -10px;
+}
+
+.hora-inicio {
+    font-size: 50px;
 }
 
 .header-card > .opcao-card img{
