@@ -1,0 +1,113 @@
+.container-card {
+  width: 100%;
+}
+
+/* Linhas dos cards */
+.rows {
+  display: flex;
+  background-color: var(--very-dark-blue);
+}
+
+.superiores {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 50%;
+}
+
+.inferiores {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 50%;
+}
+
+/* Cards */
+
+.card {
+  position: relative;
+  background-color: var(--dark-blue);
+  width: 250px;
+  height: 200px;
+  margin: 45px 0px 0px;
+  border-radius: 20px;
+  transition: 0.18s ease-in-out;
+}
+
+.card:hover {
+  background-color: var(--card-hover);
+  cursor: pointer;
+}
+
+.top-card {
+  margin: 0px 15px 30px 15px;
+  border-radius: 20px 20px 60px 60px;
+}
+
+.work {
+  background: url("./images/icon-work.svg") no-repeat top -0.5rem right 1rem var(--work-light-red);
+}
+
+.play {
+  background: url("./images/icon-play.svg") no-repeat top -0.5rem right 1rem var(--play-soft-blue);
+}
+
+.study {
+  background: url("./images/icon-study.svg") no-repeat top -0.5rem right 1rem var(--study-light-red);
+}
+
+.exercise {
+  background: url("./images/icon-exercise.svg") no-repeat top -0.5rem right 1rem
+    var(--exercise-lime-green);
+}
+
+.social {
+  background: url("./images/icon-social.svg") no-repeat top -0.5rem right 1rem var(--social-violet);
+}
+
+.self-care {
+  background: url("./images/icon-self-care.svg") no-repeat top -0.5rem right 1rem
+    var(--self-care-soft-orange);
+}
+
+/*Partes internas dos cards*/
+
+.inner-card {
+  padding-top: 30px;
+  margin: 30px;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.opcao-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ellipsis {
+  transition: transform 0.3s ease-out;
+}
+
+.ellipsis:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.body-card {
+  margin-top: 25px;
+  font-size: 55px;
+}
+
+.rodape-card {
+  margin-top: 6px;
+}
+
+.resumo-atividade {
+  font-size: 15px;
+  color: var(--pale-blue);
+  font-weight: bold;
+}

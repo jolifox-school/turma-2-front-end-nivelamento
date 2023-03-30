@@ -1,156 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("cards.css");
+
+:root {
+  /* Primary colors */
+  --blue: hsl(246, 80%, 60%);
+  --work-light-red: hsl(15, 100%, 70%);
+  --play-soft-blue: hsl(195, 74%, 62%);
+  --study-light-red: hsl(348, 100%, 68%);
+  --exercise-lime-green: hsl(145, 58%, 55%);
+  --social-violet: hsl(264, 64%, 52%);
+  --self-care-soft-orange: hsl(43, 84%, 65%);
+
+  /* Neutral colors */
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+  --card-hover: hsl(238, 40%, 32%);
+}
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    color: #FFF;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  /* var(--primary-blue); */
 }
 
 .container-main {
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    background-color: #0F1424;
+  display: grid;
+  grid-template-columns: 255px 840px;
+  height: 543px;
+  width: 1095px;
+  background-color: var(--very-dark-blue);
+  margin-top: 20vh;
 }
 
-.whrapper-page {
-    display: grid;
-    grid-template-columns: 200px 800px;
-    align-items: center;
-    height: 450px;
-    width: 100%;
-    gap: 2rem;
-}
+/* Menu lateral */
 
 .menu-lateral {
-    display: flex;
-    flex-direction: column;
-    height: 420px;
-    border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 20px;
+  margin-right: 15px;
 }
 
 .container-perfil {
-    display: grid;
-    grid-template-rows: 40% 60%;
-    background-color: #5847E6;
-    height: 70%;
-    z-index: 1;
-    padding: 2rem 0 0 2rem;
-    border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  height: 325px;
+  z-index: 1;
+  padding: 32px 0 0 32px;
+  background-color: var(--blue);
+  border-radius: 20px;
+}
+
+.container-avatar {
+  width: 80px;
+}
+
+.avatar {
+  height: 80px;
+  border: 3px solid white;
+  border-radius: 50%;
 }
 
 .container-info-perfil {
-    display: grid;
-    align-content: end;
-    height: 70%;
+  display: grid;
+  align-items: start;
+  height: 80%;
 }
 
-.title-perfil {
-    font-size: .8rem;
+/*Report for*/
+.titulo-perfil {
+  margin-top: -2px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--pale-blue);
 }
 
+/*Jeremy Robson*/
 .perfil-nome {
-    font-size: 2rem;
+  margin-top: -40px;
+  font-size: 40px;
 }
 
 .container-lista {
-    display: grid;
-    align-items: end;
-    height: 40%;
-    margin-top: -1rem;
-    padding-left: 2rem;
-    border-radius: 0 0 1rem 1rem;
-    background-color: #1E204C;
+  display: grid;
+  align-items: center;
+  height: 150px;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  margin-top: -20px;
+  padding: 32px 0 0 32px;
+}
+
+.ul-lista {
+  display: grid;
+  align-items: center;
+  margin-top: -20px;
+  margin-right: 150px;
 }
 
 .item-lista {
-    height: 2.5rem;
+  display: grid;
+  align-items: center;
+  height: 40px;
+  font-size: 1.1rem;
+  color: var(--desaturated-blue);
+  font-weight: bold;
+  transition: 0.5s;
 }
 
-.imagem-perfil {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+.item-lista:hover {
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.container-cards {
-    display: grid;
-    align-content: space-between;
-    grid-template-rows: 50% 50%;
-    height: 100%;
-    margin-top: 2rem;
-}
-
-.cards-superiores, .cards-inferiores {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    z-index: 0;
-    position: relative;
-}
-
-.cards-inferiores {
-    align-items: end;
-}
-
-.card {
-    display: grid;
-    width: 250px;
-    height: 150px;
-    border-radius: 1rem;
-    padding: 2rem 2rem 0 2rem;
-    background-color: #1E204C;
-    position: relative;
-    z-index: 1;
-}
-
-.cards-superiores .card {
-    top: 3rem;
-}
-
-.cards-inferiores .card {
-    top: 3rem;
-}
-
-.cards-inferiores .container-card {
-    top: -3rem;
-}
-
-.container-card {
-    position: relative;
-}
-
-.container-card {
-    border-radius: 1rem 1rem 0 0;
-    width: 250px;
-    height: 180px;
-    background: url("./images/icon-work.svg") no-repeat top -.5rem right 1rem #FF8964;
-}
-
-.container-card-play {
-    background: url("./images/icon-play.svg") no-repeat top -.5rem right 1rem #56C2E4;
-}
-
-.container-card-study {
-    background: url("./images/icon-study.svg") no-repeat top -.5rem right 1rem #FE5E7D;
-}
-.container-card-exercise {
-    background: url("./images/icon-exercise.svg") no-repeat top -.5rem right 1rem #4DCF83;
-}
-.container-card-social {
-    background: url("./images/icon-social.svg") no-repeat top -.5rem right 1rem #7335D3;
-}
-.container-card-self-care {
-    background: url("./images/icon-self-care.svg") no-repeat top -.5rem right 1rem #F0C659;
-}
-
-.header-card {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.hora-inicio {
-    font-size: 3.5rem;
+/* Selected period */
+.selected {
+  color: #ffffff;
+  scale: 1.05;
 }
