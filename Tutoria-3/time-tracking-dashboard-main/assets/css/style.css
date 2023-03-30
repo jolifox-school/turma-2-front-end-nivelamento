@@ -79,6 +79,7 @@
   
   .dados_jeremy h1{
     width: 50%;
+    font-size: 2.2rem;
   }
   
   .dados_jeremy p{
@@ -106,17 +107,13 @@
   .menu_bottom .text_menu_bottom ul li{
     list-style: none;
     margin: 1rem;
+    cursor: pointer;
   }
   
   h1, h3{
     font-weight: 100;
   }
-  
-  /* Estilos e posicionamento dos links da li */
-  .menu_bottom .text_menu_bottom ul li a{
-    text-decoration: none;
-    color: #fff;
-  } 
+
   
   .item2 {
     grid-area: item2;
@@ -152,7 +149,7 @@
     font-weight: 500;
   }
   
-  .box1 {
+  .box1, .box2, .box3, .box4, .box5, .box6 {
     width: 100%;
     height: 23%;
     border-radius: 15px 15px 0 0;
@@ -163,53 +160,28 @@
   }
   
   .box2 {
-      width: 100%;
-      height: 23%;
-      border-radius: 15px 15px 0 0;
       background-color: var(--soft-blue);
       background-image: url("../images/icon-play.svg");
-      background-repeat: no-repeat;
-      background-position: right;
   }
   
   .box3 {
-      width: 100%;
-      height: 23%;
-      border-radius: 15px 15px 0 0;
       background-color: var(--light-red-study);
       background-image: url("../images/icon-study.svg");
-      background-repeat: no-repeat;
-      background-position: right;
     }
   
     .box4 {
-      width: 100%;
-      height: 23%;
-      border-radius: 15px 15px 0 0;
       background-color: var(--lime-green);
       background-image: url("../images/icon-exercise.svg");
-      background-repeat: no-repeat;
-      background-position: right;
     }
   
     .box5 {
-      width: 100%;
-      height: 23%;
-      border-radius: 15px 15px 0 0;
       background-color: var(--violet);
       background-image: url("../images/icon-social.svg");
-      background-repeat: no-repeat;
-      background-position: right;
     }
   
     .box6 {
-      width: 100%;
-      height: 23%;
-      border-radius: 15px 15px 0 0;
       background-color: var(--soft-orange);
       background-image: url("../images/icon-self-care.svg");
-      background-repeat: no-repeat;
-      background-position: right;
     }
   
   
@@ -245,6 +217,7 @@
     .container {
       height: auto;
       max-width: 100vw;
+      padding: 2rem 0;
     }
   
     .content {
