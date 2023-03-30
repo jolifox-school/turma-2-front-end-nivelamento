@@ -1,133 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<header>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Página Perfil</title>
-    <link rel="stylesheet" href="./style.css">
-</header>
+    <title>Desafio Front End</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>  
 
-<body>
-    <main class="container-main">
-        <section class="whrapper-page">
-            <aside class="menu-lateral">
-                <section class="container-perfil">
-                    <div class="container-avatar">
-                        <img src="./images/image-jeremy.png" alt="" class="imagem-perfil">
-                    </div>
-                    <div class="container-info-perfil">
-                        <span class="title-perfil">Report for</span>
-                        <span class="perfil-nome">Jeremy Robson</span>
-                    </div>
+    <main class="container">
+        <section class="content">
+            <section class="box_jeremy">
+                <section class="dados_jeremy">
+                    <img class="imagem_jeremy" src="./assets/images/image-jeremy.png" alt="Foto Jeremy Robson">
+                    <section class="nome_jeremy">
+                        <p>Report for</p>
+                        <h1>Jeremy Robson</h1>
+                    </section>
                 </section>
-                <nav class="container-lista">
-                    <ul class="ul-lista">
-                        <li class="item-lista">Daily</li>
-                        <li class="item-lista">Weekly</li>
-                        <li class="item-lista">Monthly</li>
-                    </ul>
-                </nav>
-            </aside>
-            <section class="container-cards">
-                <section class="cards-superiores">
-                    <div class="container-card  container-card-work">
-                        <div class="card card-work">
-                            <header class="header-card">
-                                <span class="titulo-card">Work</span>
-                                <span class="opcao-card">°°°</span>
-                            </header>
-                            <div class="body-card">
-                                <span class="hora-inicio">32hrs</span>
-                            </div>
-                            <footer class="rodape-card">
-                                <span class="resumo-atividade">Last Week - 36hrs</span>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="container-card  container-card-play">
-                        <div class="card card-play">
-                            <header class="header-card">
-                                <span class="titulo-card">Play</span>
-                                <span class="opcao-card">°°°</span>
-                            </header>
-                            <div class="body-card">
-                                <span class="hora-inicio">32hrs</span>
-                            </div>
-                            <footer class="rodape-card">
-                                <span class="resumo-atividade">Last Week - 36hrs</span>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="container-card  container-card-study">
-                        <div class="card card-study">
-                            <div class="card-background"></div>
-                            <header class="header-card">
-                                <span class="titulo-card">Study</span>
-                                <span class="opcao-card">°°°</span>
-                            </header>
-                            <div class="body-card">
-                                <span class="hora-inicio">32hrs</span>
-                            </div>
-                            <footer class="rodape-card">
-                                <span class="resumo-atividade">Last Week - 36hrs</span>
-                            </footer>
-                        </div>
-                    </div>
-                </section>
-                <section class="cards-inferiores">
-                    <div class="container-card  container-card-exercise">
-                        <div class="card card-exercise">
-                            <div class="card-background"></div>
-                            <header class="header-card">
-                                <span class="titulo-card">Exercise</span>
-                                <span class="opcao-card">°°°</span>
-                            </header>
-                            <div class="body-card">
-                                <span class="hora-inicio">32hrs</span>
-                            </div>
-                            <footer class="rodape-card">
-                                <span class="resumo-atividade">Last Week - 36hrs</span>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="container-card container-card-social">
-                        <div class="card card-social">
-                            <div class="card-background"></div>
-                            <header class="header-card">
-                                <span class="titulo-card">Social</span>
-                                <span class="opcao-card">°°°</span>
-                            </header>
-                            <div class="body-card">
-                                <span class="hora-inicio">32hrs</span>
-                            </div>
-                            <footer class="rodape-card">
-                                <span class="resumo-atividade">Last Week - 36hrs</span>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="container-card container-card-self-care">
-                        <div class="card card-self-care ">
-                            <div class="card-background"></div>
-                            <header class="header-card">
-                                <span class="titulo-card">Self Care</span>
-                                <span class="opcao-card">°°°</span>
-                            </header>
-                            <div class="body-card">
-                                <span class="hora-inicio">32hrs</span>
-                            </div>
-                            <footer class="rodape-card">
-                                <span class="resumo-atividade">Last Week - 36hrs</span>
-                            </footer>
-                        </div>
-                    </div>
+                <section class="menu_bottom">
+                    <section class="text_menu_bottom">
+                        <nav>
+                            <ul>
+                                <li class="link">Daily</li>
+                                <li class="link">Weekly</li>
+                                <li class="link">Monthly</li>
+                            </ul>
+                        </nav>
+                    </section>
                 </section>
             </section>
         </section>
     </main>
+
+    <script src="./assets/js/script.js"></script>
 </body>
-
-<script src="./index.js"></script>
-
 </html>
