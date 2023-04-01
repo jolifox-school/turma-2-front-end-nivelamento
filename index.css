@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #ffffff;
+
+    
+}
+body{
+    z-index: 1;
+    background-color: #6d6d7a;
+}
+
+.container-main {
+    display: grid;
+    grid-template-columns: 250px 1000px;
+    height: 100vh;
+    
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.container-perfil {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    height: 70%;
+    z-index: 1;
+    padding: 32px 0 0 32px;
+    background-color: black;
+    border-radius: 16px;
+}
+
+.container-avatar > img {
+    width: 100px;
+}
+
+.container-info-perfil {
+    display: grid;
+    align-items: start;
+    height: 50%;
+}
+
+.titulo-perfil {
+    font-size: 12px;
+}
+
+.perfil-nome {
+    font-size: 32px;
+}
+
+.container-lista {
+    display: grid;
+    align-items: center;
+    height: 40%;
+    background-color:  #04046d;
+    border-radius: 16px;
+    margin-top: -16px;
+    padding: 32px 0 0 32px;
+}
+
+.item-lista {
+    height: 32px;
+}
+.cards-superiores{
+    display: flex;
+}
+
+
+.quadado1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 85px;
+    height: 50vh;
+    width: 200px;
+    border-radius: 10px;
+   background-color: #04046d;
+}
+
+.cards-inferiores{
+    display: flex;
+}
+.quadado2{
+
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 85px;
+    height: 50vh;
+    width: 200px;
+    border-radius: 10px;
+   background-color: #04046d;
+
+}
+
+.titulo-card{
+   position: relative;
+   right:  55px;
+}
+
+.opcao-card{
+    position: relative;
+    left:  55px;
+}
+
+.img{
+ position: relative;
+top: 100px;
+z-index: -1;
+margin-left: 85px;
+align-items: right;
+border-radius: 10px;
+background-color: black;
+width: 200px;
+height: 70px ;
+
+}
+#img{
+    position: relative;
+    left: 120px;
+   
+}
+
+
+
