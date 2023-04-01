@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api consulta CEP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+   <div class="container col-md-5">
+        <form>
+            <div class="form-group font-weight-bold mt-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" id="cep" pattern="\d{5}-?\d{3}" class="form-control" placeholder="Insira o CEP desejado" required>
+            </div>
+
+            <div class="form-group font-weight-bold mt-3">
+                <label for="rua" class="form-label">Rua</label>
+                <input type="text" class="form-control" id="rua" placeholder="...">
+            </div>
+
+            <div class="form-group font-weight-bold mt-3">
+                <label for="complemento" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="complemento" placeholder="...">
+            </div>
+
+            <div class="form-group font-weight-bold mt-3">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro" placeholder="...">
+            </div>
+            
+            <div class="form-group font-weight-bold mt-3">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" placeholder="...">
+            </div>
+
+            <div class="form-group font-weight-bold mt-3">
+                <label for="estado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="estado" placeholder="...">
+            </div>
+
+            <button type="button" class="btn btn-primary mt-3 botao_pesquisar">Pesquisar</button>
+            <button type="button" class="btn btn-danger mt-3">Limpar</button>
+        </form>
+   </div>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
