@@ -163,32 +163,32 @@ body {
 
 .work{
     /* background-color: var(--card-bg-color-work); */
-    background: url("./time-tracking-dashboard-main/images/icon-work.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-work);
+    background: url("../images/icon-work.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-work);
 }
 
 .play{
     /* background-color: var(--card-bg-color-play); */
-    background: url("./time-tracking-dashboard-main/images/icon-play.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-play);
+    background: url("../images/icon-play.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-play);
 }
 
 .study{
     /* background-color: var(--card-bg-color-study); */
-    background: url("./time-tracking-dashboard-main/images/icon-study.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-study);
+    background: url("../images/icon-study.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-study);
 }
 
 .exercise{
     /* background-color: var(--card-bg-color-exercise); */
-    background: url("./time-tracking-dashboard-main/images/icon-exercise.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-exercise);
+    background: url("../images/icon-exercise.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-exercise);
 }
 
 .social{
     /* background-color: var(--card-bg-color-social); */
-    background: url("./time-tracking-dashboard-main/images/icon-social.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-social);
+    background: url("../images/icon-social.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-social);
 }
 
 .care{
     /* background-color: var(--card-bg-color-care); */
-    background: url("./time-tracking-dashboard-main/images/icon-self-care.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-care);
+    background: url("../images/icon-self-care.svg") no-repeat top -.5rem right 1rem var(--card-bg-color-care);
 }
 
 .content{
