@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="stylesheet" href="./assets/responsive.css"/>
+    <link rel="icon" href="./assets/images/favicon-32x32.png"/>
     <title>Dashboard Jolifox - Nivelamento</title>
 </head>
 <body>
@@ -25,144 +27,15 @@
             </section>
             <nav class="nav-list">
                 <ul>
-                    <li class="item-list">Daily</li>
-                    <li class="item-list">Weekly</li>
-                    <li class="item-list">Monthly</li>
+                    <li class="item-list" onclick="changeSelection(this, 'daily')">Daily</li>
+                    <li class="item-list" onclick="changeSelection(this, 'weekly')">Weekly</li>
+                    <li class="item-list" onclick="changeSelection(this, 'monthly')">Monthly</li>
                 </ul>
             </nav>
         </aside>
         <section class="cards-section">
-            <section class="primary-cards">
-                <section class="container-card">
-                    <img class="icon-card" src="./assets/images/icon-work.svg"></img>
-                    <div class="card">
-                        <header class="header-card">
-                            <span class="card-title">
-                                Work
-                            </span>
-                            <img class="card-options" src="./assets/images/icon-ellipsis.svg">
-                        </header>
-                        <div class="body-card">
-                            <span class="hour-card">
-                                32hrs
-                            </span>
-                        </div>
-                        <footer class="footer-card">
-                            <span class="review-card">
-                                Last Week - 36hrs
-                            </span>
-                        </footer>
-                    </div>
-                </section>
-                <section class="container-card">
-                    <img class="icon-card" src="./assets/images/icon-play.svg"></img>
-                    <div class="card">
-                        <header class="header-card">
-                            <span class="card-title">
-                                Play
-                            </span>
-                            <img class="card-options" src="./assets/images/icon-ellipsis.svg">
-                        </header>
-                        <div class="body-card">
-                            <span class="hour-card">
-                                10hrs
-                            </span>
-                        </div>
-                        <footer class="footer-card">
-                            <span class="review-card">
-                                Last Week - 8hrs
-                            </span>
-                        </footer>
-                    </div>
-                </section>
-                <section class="container-card">
-                    <img class="icon-card" src="./assets/images/icon-study.svg"></img>
-                    <div class="card">
-                        <header class="header-card">
-                            <span class="card-title">
-                                Study
-                            </span>
-                            <img class="card-options" src="./assets/images/icon-ellipsis.svg">
-                        </header>
-                        <div class="body-card">
-                            <span class="hour-card">
-                                4hrs
-                            </span>
-                        </div>
-                        <footer class="footer-card">
-                            <span class="review-card">
-                                Last Week - 7hrs
-                            </span>
-                        </footer>
-                    </div>
-                </section>
-            </section>
-            <section class="secundary-cards">
-                <section class="container-card">
-                    <img class="icon-card" src="./assets/images/icon-exercise.svg"></img>
-                    <div class="card">
-                        <header class="header-card">
-                            <span class="card-title">
-                                Exercise
-                            </span>
-                            <img class="card-options" src="./assets/images/icon-ellipsis.svg">
-                        </header>
-                        <div class="body-card">
-                            <span class="hour-card">
-                                4hrs
-                            </span>
-                        </div>
-                        <footer class="footer-card">
-                            <span class="review-card">
-                                Last Week - 5hrs
-                            </span>
-                        </footer>
-                    </div>
-                </section>
-                <section class="container-card">
-                    <img class="icon-card" src="./assets/images/icon-social.svg"></img>
-                    <div class="card">
-                        <header class="header-card">
-                            <span class="card-title">
-                                Social
-                            </span>
-                            <img class="card-options" src="./assets/images/icon-ellipsis.svg">
-                        </header>
-                        <div class="body-card">
-                            <span class="hour-card">
-                                5hrs
-                            </span>
-                        </div>
-                        <footer class="footer-card">
-                            <span class="review-card">
-                                Last Week - 10hrs
-                            </span>
-                        </footer>
-                    </div>
-                </section>
-                <section class="container-card">
-                    <img class="icon-card" src="./assets/images/icon-self-care.svg"></img>
-                    <div class="card">
-                        <header class="header-card">
-                            <span class="card-title">
-                                Self Care
-                            </span>
-                            <img class="card-options" src="./assets/images/icon-ellipsis.svg">
-                        </header>
-                        <div class="body-card">
-                            <span class="hour-card">
-                                2hrs
-                            </span>
-                        </div>
-                        <footer class="footer-card">
-                            <span class="review-card">
-                                Last Week - 2hrs
-                            </span>
-                        </footer>
-                    </div>
-                </section>
-            </section>
         </section>
     </main>
+    <script async src="./index.js"></script>
 </body>
 </html>
