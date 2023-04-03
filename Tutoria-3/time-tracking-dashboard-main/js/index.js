@@ -1,3 +1,5 @@
+"use strict";
+
 /* 
 *  1 -  Usar a variável "valores" para inserir os dados nos cards, em cada período somar os valores de 
 *       cada categoria.
@@ -95,64 +97,50 @@ const valores = [
     },
 ]
 
-const list = ["Daily", "Weekly", "Monthly"];
+const menuItems = document.querySelectorAll(".menu-items li");
 
-const createList = () => {
-    list.forEach(item => {
-        const ul = document.querySelector(".ul-lista");
-        const itemDaLista = document.createElement("li");
-        itemDaLista.classList.add("item-lista");
-        itemDaLista.textContent = item;
-        ul.appendChild(itemDaLista)
+menuItems.forEach((e) => {
+    // console.log(e.innerHTML);
+    e.addEventListener("click", updateCards, false);
+});
+
+function updateCards() {
+    menuItems.forEach((e) => {
+        e.classList.remove("active");
     });
-}
 
-createList();
+    const horaInicioElements = document.querySelectorAll(".hora-inicio");
+    let sum = 0;
 
-const cardsSuperiores = ["Work", "Play", "Study"];
-const cardInferiores = ["Exercise", "Social", "Self-Care"];
-const superior = document.querySelector(".cards-superiores");
-const inferior = document.querySelector(".cards-inferiores");
+    this.classList.add("active");
+    if (this.innerHTML == "Daily") {
+        horaInicioElements.forEach((horaInicioElement, index) => {
+            horaInicioElement.innerHTML = valores[0].card[index].valor + "hrs";
+        });
 
-const createCard = (arrayCard, elementoPai) => {
+        valores[0].card.forEach((e) => {
+            sum += e.valor;
+        });
+        console.log(sum);
+    }
+    else if (this.innerHTML == "Weekly") {
+        horaInicioElements.forEach((horaInicioElement, index) => {
+            horaInicioElement.innerHTML = valores[1].card[index].valor + "hrs";
+        });
 
-    for(i = 0; i < arrayCard.length; i++) {
-        const card = `
-            <div class="card card-${arrayCard[i]}">
-                <header class="header-card">
-                    <span class="titulo-card">${arrayCard[i]}</span>
-                    <span class="opcao-card">°°°</span>
-                </header>
-                <div class="body-card">
-                    <span class="hora-inicio">32hrs</span>
-                </div>
-                <footer class="rodape-card">
-                    <span class="resumo-atividade">Last Week - 36hrs</span>
-                </footer>
-            </div>
-        `
-        const containerCard = document.createElement("div");
-        containerCard.classList.add("container-card");
-        containerCard.classList.add(`container-card-${arrayCard[i]}`);
-        containerCard.innerHTML = card;
-        elementoPai.appendChild(containerCard);
+        valores[1].card.forEach((e) => {
+            sum += e.valor;
+        });
+        console.log(sum);
+    }
+    else {
+        horaInicioElements.forEach((horaInicioElement, index) => {
+            horaInicioElement.innerHTML = valores[2].card[index].valor + "hrs";
+        });
+
+        valores[2].card.forEach((e) => {
+            sum += e.valor;
+        });
+        console.log(sum);
     }
 }
-
-createCard(cardsSuperiores, superior);
-createCard(cardInferiores, inferior);
-
-const funcaoClick = () => {
-    const lista = document.querySelectorAll(".item-lista");
-    lista.forEach(itemAlvo => {
-        itemAlvo.addEventListener("click", ()=> {
-            console.log("elemento clicado", itemAlvo.textContent)
-        });
-    });
-}
-funcaoClick();
-
-
-
-
-
