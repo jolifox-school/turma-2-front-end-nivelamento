@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+:root {
+    /*
+    Primary colors
+    */
+    --blue: hsl(246, 80%, 60%);
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+    /*
+    Neutral colors
+    */
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: var(--desaturated-blue);
+    color: #fff;
+    font-family: Rubik;
+}
+
+html{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form{
+    width: 280px;
+}
+    
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+    
+.form-label{
+    font-size: 14px;
+    color: var(--dark-blue);
+    margin: 0 0 4px 6px;
+    font-weight: 600;
+}
+    
+.form-input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #8c8c8c;
+    background: var(--pale-blue);
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 4px #a7a7a7;
+}
+
+button{
+    padding: 6px;
+    border: 2px solid var(--soft-orange);
+    background: var(--soft-orange);
+    border-radius: 7px;
+    margin-top: 10px;
+    font-weight: 800;
+    color: var(--dark-blue);
+    width: 45%;
+}
+
+button:last-of-type{
+    margin-left: 14px;
+}
