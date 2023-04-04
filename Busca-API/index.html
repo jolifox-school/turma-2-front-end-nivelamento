@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Busca CEP - API</title>
+</head>
+<body>
+    <h1>Busca CEP</h1>
+    <form>
+        <div class="form-group">
+            <label class="form-label" for="cep">CEP:</label>
+            <input class="form-input" type="text" id="cep" name="cep" placeholder="Informe seu CEP">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label" for="rua">Rua:</label>
+            <input class="form-input" type="text" id="rua" name="rua">
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label" for="bairro">Bairro:</label>
+            <input class="form-input" type="text" id="bairro" name="bairro">
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label" for="cidade">Cidade:</label>
+            <input class="form-input" type="text" id="cidade" name="cidade">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label" for="Estado">Estado:</label>
+            <input class="form-input" type="text" id="estado" name="estado">
+        </div>
+
+		<button type="submit" id="btn-busca">Pesquisar</button>
+		<button id="btn-limpa">Limpar</button>
+	</form>
+</body>
+<script src="./script.js"></script>
+</html>
